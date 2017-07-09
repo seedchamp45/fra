@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UMX-EI-2Fj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Q4H-8J-JMc">
+            <objects>
+                <viewController id="UMX-EI-2Fj" customClass="MainViewController" customModule="chatstories" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g2B-Jf-Mtb"/>
+                        <viewControllerLayoutGuide type="bottom" id="WWc-6j-bHp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p6c-wB-h1W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsx-fX-7T7">
+                                <rect key="frame" x="164" y="362" width="46" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="LNA-56-Yu3"/>
+                                </constraints>
+                                <state key="normal" title="story2"/>
+                                <connections>
+                                    <segue destination="GIL-kQ-nTZ" kind="show" id="NbF-Rb-QmS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqT-Qa-hQd">
+                                <rect key="frame" x="164" y="279" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Jew-6L-6Lg"/>
+                                </constraints>
+                                <state key="normal" title="story1"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="QdH-Op-edG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VqT-Qa-hQd" firstAttribute="leading" secondItem="Jsx-fX-7T7" secondAttribute="leading" id="0E5-ym-D2J"/>
+                            <constraint firstItem="VqT-Qa-hQd" firstAttribute="top" secondItem="g2B-Jf-Mtb" secondAttribute="bottom" constant="259" id="A7z-uw-5qV"/>
+                            <constraint firstItem="VqT-Qa-hQd" firstAttribute="trailing" secondItem="Jsx-fX-7T7" secondAttribute="trailing" id="FvO-cY-OWV"/>
+                            <constraint firstItem="Jsx-fX-7T7" firstAttribute="top" secondItem="VqT-Qa-hQd" secondAttribute="bottom" constant="53" id="GLW-2V-ubq"/>
+                            <constraint firstItem="VqT-Qa-hQd" firstAttribute="centerX" secondItem="p6c-wB-h1W" secondAttribute="centerX" id="O6x-on-dCP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4O6-UX-QRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.20000000000005" y="160.56971514242881"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chatstories" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wwc-ay-Zoh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NXl-SC-PeD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="z48-r4-aw0">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wwc-ay-Zoh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HVp-13-cbV"/>
+                            <constraint firstAttribute="trailing" secondItem="Wwc-ay-Zoh" secondAttribute="trailing" id="Jd0-BL-2rt"/>
+                            <constraint firstItem="Wwc-ay-Zoh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MK4-U3-ny5"/>
+                            <constraint firstItem="Wwc-ay-Zoh" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="oqN-Hj-6TW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="show" destination="Wwc-ay-Zoh" id="1tX-rR-hWz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="-374"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="rmn-hN-hEN">
+            <objects>
+                <viewController id="GIL-kQ-nTZ" customClass="SecondViewController" customModule="chatstories" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gPY-Uq-ff3"/>
+                        <viewControllerLayoutGuide type="bottom" id="OGF-9g-Umc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ah7-3W-qyK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wjt-lm-eJK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eNL-jA-u8P">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XYo-nz-Ua2">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wjt-lm-eJK" firstAttribute="top" secondItem="ah7-3W-qyK" secondAttribute="top" id="Jiu-Kj-bHj"/>
+                            <constraint firstItem="wjt-lm-eJK" firstAttribute="leading" secondItem="ah7-3W-qyK" secondAttribute="leading" id="Sxa-Ww-VcP"/>
+                            <constraint firstAttribute="trailing" secondItem="wjt-lm-eJK" secondAttribute="trailing" id="gyt-Ad-SFh"/>
+                            <constraint firstItem="wjt-lm-eJK" firstAttribute="bottom" secondItem="OGF-9g-Umc" secondAttribute="top" id="piZ-hs-Fx5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="show" destination="wjt-lm-eJK" id="T05-ZH-5SK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Hl-Yh-ngf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="415"/>
+        </scene>
+    </scenes>
+</document>
